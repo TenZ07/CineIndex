@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CineIndex</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <h1 class="logo">CineIndex</h1>
+    <div class="profile"></div>
+    <a href="https://github.com/TenZ07" target="_blank" class="github-btn">
+      <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v 3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+      </svg>
+      GitHub
+    </a>
+  </nav>
+
+  <header class="hero">
+    <div class="slide active">
+      <img src="images/banners/banner1.jpg">
+      <div class="hero-content">
+        <h1>Project Hail Mary</h1>
+        <p>A lone astronaut wakes up on a spacecraft with no memory of who he is or how he got there. As his memories slowly return, he realizes he's humanity's last hope to stop a cosmic threat that could wipe out life on Earth. What follows is a mix of science, survival, and an unexpected friendship that changes everything.</p>
+        <button onclick="openMovie('Project Hail Mary', 'images/posters/img1.jpg', 'A lone astronaut wakes up on a spacecraft with no memory of who he is or how he got there. As his memories slowly return, he realizes he\'s humanity\'s last hope to stop a cosmic threat that could wipe out life on Earth. What follows is a mix of science, survival, and an unexpected friendship that changes everything.', 8.5)">Play</button>
+      </div>
+    </div>
+
+    <div class="slide">
+      <img src="images/banners/banner2.jpg">
+      <div class="hero-content">
+        <h1>Tenet</h1>
+        <p>A secret agent is recruited into a mission that goes beyond conventional time. Using a concept known as time inversion, he must prevent a global catastrophe while navigating a world where the laws of physics don't behave the way they should. Reality bends, but the stakes remain deadly real.</p>
+        <button onclick="openMovie('Tenet', 'images/posters/img2.jpg', 'A secret agent is recruited into a mission that goes beyond conventional time. Using a concept known as time inversion, he must prevent a global catastrophe while navigating a world where the laws of physics don\'t behave the way they should. Reality bends, but the stakes remain deadly real.', 7.5)">Play</button>
+      </div>
+    </div>
+
+    <div class="slide">
+      <img src="images/banners/banner3.jpg">
+      <div class="hero-content">
+        <h1>Interstellar</h1>
+        <p>In a future where Earth is becoming uninhabitable, a group of astronauts travel through a wormhole in search of a new home for humanity. As they venture across distant planets and distorted time, one man struggles between saving the world and returning to his family.</p>
+        <button onclick="openMovie('Interstellar', 'images/posters/img3.jpg', 'In a future where Earth is becoming uninhabitable, a group of astronauts travel through a wormhole in search of a new home for humanity. As they venture across distant planets and distorted time, one man struggles between saving the world and returning to his family.', 8.6)">Play</button>
+      </div>
+    </div>
+
+    <div class="slide">
+      <img src="images/banners/banner4.jpg">
+      <div class="hero-content">
+        <h1>Seven</h1>
+        <p>Two detectives track down a serial killer who uses the seven deadly sins as inspiration for his crimes. As the investigation deepens, the line between justice and obsession blurs, leading to a chilling and unforgettable conclusion.</p>
+        <button onclick="openMovie('Seven', 'images/posters/img4.jpg', 'Two detectives track down a serial killer who uses the seven deadly sins as inspiration for his crimes. As the investigation deepens, the line between justice and obsession blurs, leading to a chilling and unforgettable conclusion.', 8.6)">Play</button>
+      </div>
+    </div>
+
+    <div class="slide">
+      <img src="images/banners/banner5.jpg">
+      <div class="hero-content">
+        <h1>Fight Club</h1>
+        <p>An insomniac office worker forms an underground fight club with a charismatic soap salesman. What begins as a rebellious escape from modern life spirals into something far more dangerous, challenging identity, control, and reality itself.</p>
+        <button onclick="openMovie('Fight Club', 'images/posters/img5.jpg', 'An insomniac office worker forms an underground fight club with a charismatic soap salesman. What begins as a rebellious escape from modern life spirals into something far more dangerous, challenging identity, control, and reality itself.', 8.8)">Play</button>
+      </div>
+    </div>
+  </header>
+
+  <section class="row">
+    <h2>Movies</h2>
+    <div class="row-posters">
+      <img src="images/posters/img1.jpg" onclick="openMovie('Project Hail Mary', 'images/posters/img1.jpg', 'A lone astronaut wakes up on a spacecraft with no memory of who he is or how he got there. As his memories slowly return, he realizes he’s humanity’s last hope to stop a cosmic threat that could wipe out life on Earth. What follows is a mix of science, survival, and an unexpected friendship that changes everything.', 8.5)">
+      <img src="images/posters/img2.jpg" onclick="openMovie('Tenet', 'images/posters/img2.jpg', 'A secret agent is recruited into a mission that goes beyond conventional time. Using a concept known as time inversion, he must prevent a global catastrophe while navigating a world where the laws of physics don’t behave the way they should. Reality bends, but the stakes remain deadly real.', 7.5)">
+      <img src="images/posters/img3.jpg" onclick="openMovie('Interstellar', 'images/posters/img3.jpg', 'In a future where Earth is becoming uninhabitable, a group of astronauts travel through a wormhole in search of a new home for humanity. As they venture across distant planets and distorted time, one man struggles between saving the world and returning to his family.', 8.6)">
+      <img src="images/posters/img4.jpg" onclick="openMovie('Seven', 'images/posters/img4.jpg', 'Two detectives track down a serial killer who uses the seven deadly sins as inspiration for his crimes. As the investigation deepens, the line between justice and obsession blurs, leading to a chilling and unforgettable conclusion.', 8.6)">
+      <img src="images/posters/img5.jpg" onclick="openMovie('Fight Club', 'images/posters/img5.jpg', 'An insomniac office worker forms an underground fight club with a charismatic soap salesman. What begins as a rebellious escape from modern life spirals into something far more dangerous, challenging identity, control, and reality itself.', 8.8)">
+    </div>
+  </section>
+
+  <script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.slide');
+    let autoSlideInterval;
+
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.classList.toggle('active', i === index);
+      });
+    }
+
+    function nextSlide() {
+      currentSlide = (currentSlide + 1) % slides.length;
+      showSlide(currentSlide);
+    }
+
+    function startAutoSlide() {
+      autoSlideInterval = setInterval(nextSlide, 3000);
+    }
+
+    function stopAutoSlide() {
+      clearInterval(autoSlideInterval);
+    }
+
+    // Start the slider
+    startAutoSlide();
+
+    // Pause slider on hover, resume when mouse leaves
+    document.addEventListener('DOMContentLoaded', function() {
+      const heroSection = document.querySelector('.hero');
+      if (heroSection) {
+        heroSection.addEventListener('mouseenter', stopAutoSlide);
+        heroSection.addEventListener('mouseleave', startAutoSlide);
+      }
+    });
+
+    function openMovie(title, poster, desc, rating) {
+      localStorage.setItem('movieTitle', title);
+      localStorage.setItem('moviePoster', poster);
+      localStorage.setItem('movieDesc', desc);
+      localStorage.setItem('movieRating', rating);
+      window.location.href = 'movie.html';
+    }
+  </script>
+
+</body>
+</html>
